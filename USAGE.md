@@ -1,18 +1,22 @@
-#Using Conda Environment
+# Using Conda Environment
 
 1. Display Conda environment
+
 
     conda info (to show information about current Conda install)
 
 2. List all existing environments
 
+
     conda env list
 
 3. Create a new environment
 
+
     (base)username % conda create -n test_env python=3.8
 
 4. Activate a new environment
+
 
     (base) username % conda activate project-env
     (project-env) username %
@@ -33,6 +37,7 @@ Revision history allows you to rollback your environment to the previous version
 You can always use conda activate or conda deactivate to switch between your environments. 
 You can directly activate the environment you wish to use by using conda activate.
 
+
     (project-env) username % conda activate base
 
     (base) username %
@@ -40,12 +45,13 @@ You can directly activate the environment you wish to use by using conda activat
 conda deactivate will deactivate your current active environment and
 change to the default environment which is the base environment.
 
-(project-env) username % conda deactivate
+    (project-env) username % conda deactivate
     (base) username %
 
 6. Remove the environment
 While you are done with this environment and wish to remove it.
 You can use conda env remove to remove the environment.
+
 
     (base) username % conda env list
 
@@ -57,17 +63,17 @@ to remove by using --name.
 # Uninstall anaconda on Ubuntu
 ## First of all, you have to install the package anaconda-clean by running the following command:
 
-conda install anaconda-clean
+    conda install anaconda-clean
 
 ## Next step is to clean all anaconda related files and directories with the tool we just installed (anaconda-clean):
 
-anaconda-clean --yes
+    anaconda-clean --yes
 
 ## Also removes the entire anaconda directory as shown below:
 
-rm -rf ~/anaconda3
+    rm -rf ~/anaconda3
 
 ## NOTE: anaconda-clean tool creates a backup of files/dirs after removing the anaconda files, so remove it with the following command:
 
-rm -rf ~/.anaconda_backup
+    rm -rf ~/.anaconda_backup
 
